@@ -1,37 +1,20 @@
 class Car {
-
-    constructor(brand) {
-    
-    this.carname = brand;
-    
+    constructor(myname) {
+    this.carname = myname;
     }
-    
     present() {
-    
     return 'I have a ' + this.carname;
-    
     }
-    
     }
-    
     class Model extends Car {
-    
-    constructor(brand, mod) {
-    
-    super(brand);
-    
+    constructor(myname, mod) {
+    super(myname);
     this.model = mod;
-    
     }
-    
     show() {
-    
-    return this.present() + ', it is a ' + this.model;
-    
-    }
-    
-    }
-    
-    let myCar = new Model("Ford", "Cadillac");
-    
-    console.log(myCar.show());
+    return this.present() + ', it is a ' + this.model; 
+    } 
+    } 
+
+let myCar = new Model("Ayan", "Cadillac");
+console.log(myCar.show());
